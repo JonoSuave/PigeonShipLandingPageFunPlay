@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Open+Sans|Quattrocento+Sans|Roboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="figuring-out-banner.css">
-
+    
+    <script src="https://use.fontawesome.com/26c89608ea.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="jquery.loadmodal.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,11 +15,14 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row well" id="first-row">
+        <div class="row well enough-title-background" id="first-row">
             <div class="col-md-12 text-center">
-                <h3 class="section-title">Enough With Overhead Costs</h3>
-                <h4>PigeonShip's logistical software cuts shipping costs, keeps employees inhouse,<br> and delivers any day on-demand</h4>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See Savings</button>
+                <h3 class="section-title"><span id="enough-word">Enough</span> With Overhead Costs</h3>
+                <div class="seperator">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <h4 id="see-savings-margin">PigeonShip's logistical software cuts shipping costs, keeps employees inhouse,<br> and delivers any day on-demand</h4>
+                <button type="button" id="savings" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span id="see-savings-text">See Savings</span></button>
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
 
@@ -85,27 +89,28 @@
         <div class="row" id="video-margin">
             <div class="col-md-4 col-md-offset-1">
                 <h3 class="text-center">Simple, Convenient, Reliable</h3>
-                <p>PigeonShip is quick, easy, and efficient to use - no matter the day, no matter the time.</p>
+                <p class="text-center lead">PigeonShip is quick, easy, and efficient to use - no matter the day, no matter the time.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-md-offset-1">
                 <iframe src="https://player.vimeo.com/video/161503982" width="536" height="302" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="row well">
+        <div class="row calculator">
             <div class="col-md-12 text-center">
-                <h4>How much will you save with PigeonShip?</h4>
+                <h3>How much will you <span id="save-color">save</span> with PigeonShip?</h3>
 
             </div>
 
         </div>
 
 
-        <div class="row">
+        <div class="row" id="description-padding">
             <div class="col-md-10 col-md-offset-1">
+                
                 <div class="col-md-4  section-description">
                     <img class="img-responsive center-block" src="images/circular-pic-of-jared.png">
-                    <a href="#" class="text-center"><h4>Try one on us!</h4></a>
+                    <a href="#" class="text-center"><h4>4 Reasons to Love PigeonShip</h4></a>
                     <ol class="description">
                         <li>Enough with the overhead costs! Don't worry about car insurance, vehicle maintenance, and keep employees in-house.
                         </li>
