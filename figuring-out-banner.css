@@ -1,3 +1,6 @@
+.description {
+    display: none;
+}
 .row-centered {
     text-align:center;
 }
@@ -62,15 +65,18 @@ ol{
 	padding-left: 20px;
 }
 h3{
-	font-family: 'Crete Round', serif;
-	font-size: 55px;
+	font-family: inherit;
+	font-size: 44px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 h4{
 	font-family: 'Lato', sans-serif;
 	font-size: 25px;
 }
 h5{
-	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: inherit;
 	font-size: 30px;
 	margin-right: 15px;
 	padding-left: 0px;
@@ -104,3 +110,31 @@ h5{
 	margin-left: 0px;
 }
 
+
+.center-block {
+    
+}
+
+button {
+    
+}
+
+a {
+    color: inherit;
+}
+
+a.text-center {
+    font-family: 'Lato', sans-serif;
+	font-size: 25px;
+}
+
+body {
+    "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+
+.section-title {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
