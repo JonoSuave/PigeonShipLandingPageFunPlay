@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Open+Sans|Quattrocento+Sans|Roboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="figuring-out-banner.css">
-    
+    <link rel="stylesheet" href="https://embed.calculoid.com/styles/main.css" />
+
+    <script src="https://embed.calculoid.com/scripts/combined.min.js"></script>
     <script src="https://use.fontawesome.com/26c89608ea.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="jquery.loadmodal.js"></script>
@@ -21,7 +23,7 @@
                 <div class="seperator">
                     <i class="fa fa-circle"></i>
                 </div>
-                <h4 id="see-savings-margin">PigeonShip's logistical software cuts shipping costs, keeps employees inhouse,<br> and delivers any day on-demand</h4>
+                <h4 id="see-savings-margin">PigeonShip's logistical software cuts shipping costs, keeps employees inhouse,<br> and delivers <span id="any-word">any</span> day on-demand</h4>
                 <button type="button" id="savings" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span id="see-savings-text">See Savings</span></button>
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
@@ -96,63 +98,113 @@
             </div>
         </div>
 
-        <div class="row calculator">
+        <div class="row black-background">
             <div class="col-md-12 text-center">
-                <h3>How much will you <span id="save-color">save</span> with PigeonShip?</h3>
-
+                <h3>How much will you <span class="save-color">save</span> with PigeonShip?</h3>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <div ng-app="calculoid" ng-controller="CalculoidMainCtrl" ng-init="init({calcId:22735,apiKey:''})" ng-include="load()">
+                </div>
             </div>
 
         </div>
-
-
-        <div class="row" id="description-padding">
+        
+        <div class="row" id="testimonial">
             <div class="col-md-10 col-md-offset-1">
-                
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="images/best-of-state-medallion.png">
+                </div>
+
+                <div class="col-md-6">
+                    <iframe width="536" height="302" src="https://www.youtube.com/embed/BXl2ZG3jZtg" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row black-background" id="description-padding">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <h3 id="123-padding">Easy As <span class="save-color">1 2 3</span></h3>
                 <div class="col-md-4  section-description">
-                    <img class="img-responsive center-block" src="images/circular-pic-of-jared.png">
-                    <a href="#" class="text-center"><h4>4 Reasons to Love PigeonShip</h4></a>
-                    <ol class="description">
-                        <li>Enough with the overhead costs! Don't worry about car insurance, vehicle maintenance, and keep employees in-house.
+                    <img class="img-responsive center-block" src="images/post-it.png">
+                    <a href="#" class="text-center"><h4>Post It</h4></a>
+                    <ul class="description">
+                        <li>List the item, destination, and date of delivery.
                         </li>
-                        <li>Pigeons abound! No need to worry about order variance, pigeons are ready to deliver in the clutch - the beauty of crowd sourcing.
-                        </li>
-                        <li>Each pigeon has been rated, background-cheecked, and trained to deliver your orders in a timely manner
-                        </li>
-                        <li>Who cares what day it is! Weekday, weekend, nighttime, or holiday pigeons can deliver.
-                        </li>
-                        <li class="list-unstyled"><button class="btn btn-primary btn-lg center-block"><a href="#">Find a Pigeon</a></button></li>
-                    </ol>
+                    </ul>
                 </div>
                 
                 <div class="col-md-4  section-description">
-                    <img class="img-responsive center-block" src="images/circular-pic-of-jared.png">
-                    <a href="#" class="text-center"><h4>Try one on us!</h4></a>
+                    <img class="img-responsive center-block" src="images/pigeon-pick-up.png">
+                    <a href="#" class="text-center"><h4>Pigeon Pick Up</h4></a>
                     <ul class="description list-unstyled">
-                        <li><span>Does PigeonShip sound too good to be true? Would you like to try out the service before committing? No worries, let us cast away any qualms, and provide you with a free delivery on us!
-                        </span><br><br>
-                        <span>We're incredibly confident that you'll enjoy the experience and love the bottom-line savings. Enter your email below and we'll give you a free delivery on us!
-                        </span>
+                        <li>A trusted, background checked Pigeon will call in advance and arrive to pick up your order.
                         </li>
-                        <li><button class="btn btn-primary btn-lg center-block"><a href="#">Find a Pigeon</a></button></li>
                     </ul>
                 </div>
                 
                 
                 <div class="col-md-4  section-description">
-                    <img class="img-responsive center-block" src="images/circular-pic-of-jared.png">
-                    <a href="#" class="text-center"><h4>PigeonShip's Ingenuity</h4></a>
+                    <img class="img-responsive center-block" src="images/pigeon-delivers.png">
+                    <a href="#" class="text-center"><h4>Pigeon Delivers</h4></a>
                     <ul class="description list-unstyled">
-                        <li><span>The idea of PigeonShip sprung upon Jared after finishing a rough semi-pro golf tournament. To add further insult, in the midst of his three-hour drive home he realized he’d forgotten his gear. That’s when the ingenuity of PigeonShip struck him – how nice it would be if another driver along his same route could pick up and drop off his golf gear!
-                        </span><br><br>
-                        <span>Over the next couple years, Jared organized the team, technology, and crowd-sourced couriers to bring to fruition PigeonShip. Now businesses can ship almost anything, anytime for less money and with on-demand delivery flexibility!
-                        </span>
+                        <li>Within 15 minutes of delivery, the pigeon will notify and send a picture with proof of safe, secure delivery.
                         </li>
-                        <li><button class="btn btn-primary btn-lg center-block"><a href="#">Find a Pigeon</a></button></li>
                     </ul>
                 </div>
+            </div>
+            <div class="col-md-12" id="find-a-pigeon">
+                <button class="btn btn-primary btn-lg center-block"><a href="#">Find a Pigeon</a></button>
             </div>
         </div>
         
+    </div>
+    
+    <div class='footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-4 col-xs-6'>
+            <h4>Who We Are</h4>
+            <p><i>Blasting Off With Bootstrap</i> is the fastest way to space. <a href='tickets.html'>Book your ticket today</a>!</p>
+            <p><a href='about.html'>More About Us <i class='glyphicon glyphicon-arrow-right'></i></a></p>
+          </div>
+
+          <div class='col-sm-2 col-xs-6'>
+            <h4>Links</h4>
+            <ul class='list-unstyled'>
+              <li><a href='#'>Home</a></li>
+              <li><a href='#'>Tickets</a></li>
+              <li><a href='#'>Stations</a></li>
+            </ul>
+          </div>
+
+          <div class='clearfix visible-xs'></div>
+
+          <div class='col-sm-2 col-xs-6'>
+            <h4>Stay in Touch</h4>
+            <ul class='list-unstyled'>
+              <li><a href='#'>About</a></li>
+              <li><a href='#'>Contact Us</a></li>
+              <li><a href='blog.html'>Blog</a></li>
+              <li><a href='#'>Twitter</a></li>
+              <li><a href='#'>Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class='col-sm-4 col-xs-6'>
+            <h4>Contact Us</h4>
+            <ul class='list-unstyled'>
+              <li><i class='glyphicon glyphicon-globe'></i> Orlando, FL</li>
+              <li><i class='glyphicon glyphicon-phone'></i> 1-555-blast-off</li>
+              <li class="break-word"><i class='glyphicon glyphicon-envelope'></i>
+                <a href='mailto:blastingoff@codeschool.com'> blastingoff@codeschool.com</a>
+              </li>
+            </ul>
+
+            <p>Blasting Off With Bootstrap &copy;2214.</p>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>

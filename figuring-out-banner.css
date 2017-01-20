@@ -192,16 +192,16 @@ body {
     margin-top: 20px;
 }
 
-.calculator {
+.black-background {
     background: #20222e url(https://www.pigeonship.com/homepage/images/work-process/bg.jpg) no-repeat 0 0 fixed;
     color: #fff;
 }
 
 #description-padding {
-    padding: 5% 5%;
+    padding: 2% 5% 5% 5%;
 }
 
-#save-color {
+.save-color {
     background: -webkit-linear-gradient(90deg, #FFBF00 0%, #FF8000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -212,6 +212,22 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+#any-word {
+    background: #20222e url(https://www.pigeonship.com/homepage/images/work-process/bg.jpg) no-repeat 0 0 fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#find-a-pigeon .btn-primary{
+    margin-bottom: -3%
+}
+
+.section-description {
+        padding-top: 4%;
+    }
+
+
 
 /*
 #see-savings-text {
